@@ -3,8 +3,6 @@ import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.joda.time.Interval;
 
-import org.joda.time.format.DateTimeFormat;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -12,6 +10,7 @@ import java.util.ArrayList;
  * @author Johan Henkens
  *
  */
+@SuppressWarnings("serial")
 public class MealMenu implements Serializable{
 	private String commonsName;
 	private long startMillis, endMillis, modMillis;
@@ -38,6 +37,24 @@ public class MealMenu implements Serializable{
 		this.venues = venues;
 		this.mealName = mealName;
 		removeEmptyVenues();
+	}
+	
+	public boolean equals(Object obj){
+		MealMenu in;
+		try{
+			in = (MealMenu) obj;
+		}catch(ClassCastException e){
+			return false;
+		}
+		if(!this.getCommonsName().equals(in.getCommonsName())
+				|| !this.getMealInterval().equals(in.getMealInterval())
+				|| !this.getMealName().equals(in.getMealName())
+				|| !this.getModDate().equals(in.getModDate())
+				|| this.getVenues().size()!=in.getVenues().size()) return false;
+		for(int i = 0; i<this.getVenues().size();i++){
+			if(!this.getVenues().get(i).equals(in.getVenues().get(i))) return false;
+		}
+		return true;
 	}
 	
 	private void removeEmptyVenues(){

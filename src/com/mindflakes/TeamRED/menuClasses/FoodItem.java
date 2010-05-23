@@ -32,6 +32,16 @@ public class FoodItem implements Serializable{
 		
 	}
 	
+	public boolean equals(Object obj){
+		FoodItem in;
+		try{
+			in = (FoodItem) obj;
+		}catch(ClassCastException e){
+			return false;
+		}
+		return (this.name.equals(in.name));
+	}
+	
 	
 	/** Returns the name of the food
 	 * @return the name of the food

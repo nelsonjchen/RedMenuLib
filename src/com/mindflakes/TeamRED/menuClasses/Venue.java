@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * @author Johan Henkens
  *
  */
+@SuppressWarnings("serial")
 public class Venue implements Serializable{
 	private String name;
 	private ArrayList<FoodItem> foodItems;
@@ -30,6 +31,25 @@ public class Venue implements Serializable{
 	@SuppressWarnings("unused")
 	private Venue() {
 		
+	}
+	
+	public boolean equals(Object obj){
+		Venue ven;
+		try{
+			ven = (Venue) obj;
+		}catch(ClassCastException e){
+			return false;
+		}
+		if(!this.getName().equals(ven.getName()) || 
+				this.getFoodItems().size()!=ven.getFoodItems().size()){
+			return false;
+		}
+		for(int i = 0; i<this.getFoodItems().size();i++){
+			if(!this.getFoodItems().get(i).equals(ven.getFoodItems().get(i))){
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	/** returns the name of this <code>Venue</code>. For example, "Grill" or "Bakery".
