@@ -8,6 +8,7 @@ import java.io.Serializable;
  * @author Johan Henkens
  *
  */
+@SuppressWarnings("serial")
 public class FoodItem implements Serializable{
 	private String name;
 	private boolean vegan;
@@ -39,7 +40,8 @@ public class FoodItem implements Serializable{
 		}catch(ClassCastException e){
 			return false;
 		}
-		return (this.name.equals(in.name));
+		return (this.name.equals(in.name) && 
+				this.vegan==in.vegan && this.vegetarian==in.vegetarian);
 	}
 	
 	

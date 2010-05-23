@@ -1,6 +1,4 @@
 package com.mindflakes.TeamRED.MenuXML;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -16,7 +14,13 @@ public class Reader {
 		else return result;
 	}
 	
+	private static String fixFromXML(String s){
+		return s.replaceAll("&amp;","&").replaceAll("&lt;","<").replaceAll("&gt;",">").replaceAll("&apos;","\'").replaceAll("&quot;","\"");
+	}
+	
+	
 	private static ArrayList<MealMenu> parseMealMenus(Scanner sc){
+		if(!sc.hasNext()||!sc.nextLine().equals("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>")) return null;
 		if(!sc.hasNext()||!sc.nextLine().equals("<MealMenus>")) 
 			return null;
 		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
@@ -70,7 +74,7 @@ public class Reader {
 			Long startMillis = Long.parseLong(startMillisString.substring(startMillisString.indexOf('>')+1,startMillisString.lastIndexOf("</")));
 			Long endMillis = Long.parseLong(endMillisString.substring(endMillisString.indexOf('>')+1,endMillisString.lastIndexOf("</")));
 			Long modMillis = Long.parseLong(modMillisString.substring(modMillisString.indexOf('>')+1,modMillisString.lastIndexOf("</")));
-			return new MealMenu(commonsName,startMillis,endMillis,modMillis,venues,mealName);
+			return new MealMenu(fixFromXML(commonsName),startMillis,endMillis,modMillis,venues,fixFromXML(mealName));
 		} catch(NumberFormatException e){
 			return null;
 		}
@@ -112,7 +116,7 @@ public class Reader {
 			return null;
 	
 		venueName = venueName.substring(venueName.indexOf('>')+1,venueName.lastIndexOf("</"));
-		return new Venue(venueName,foods);
+		return new Venue(fixFromXML(venueName),foods);
 	}
 	
 	private static ArrayList<FoodItem> parseFoods(Scanner sc){
@@ -155,7 +159,7 @@ public class Reader {
 		if(!sc.hasNext()||!sc.nextLine().equals("</FoodItem>")) 
 			return null;
 		
-		return new FoodItem(foodName,
+		return new FoodItem(fixFromXML(foodName),
 				(properties.equals("Vegan"))?true:false,
 						(properties.equals("Vegetarian")||properties.equals("Vegan"))?true:false);
 	}
