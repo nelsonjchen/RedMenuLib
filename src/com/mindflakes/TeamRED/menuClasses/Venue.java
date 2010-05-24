@@ -19,14 +19,7 @@ public class Venue implements Serializable{
 		this.name = name;
 		this.foodItems = (foodItems!=null)?foodItems:new ArrayList<FoodItem>();
 	}
-	
-	public void fixFoodItems(){
-		for(int i = 0; i < foodItems.size();i++){
-			if(foodItems.get(i)==null) foodItems.remove(i--);
-		}
-		if(foodItems.size()==0) foodItems=null;
-	}
-	
+		
 	
 	@SuppressWarnings("unused")
 	private Venue() {

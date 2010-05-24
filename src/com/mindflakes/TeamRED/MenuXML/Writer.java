@@ -5,8 +5,19 @@ import java.util.ArrayList;
 
 import com.mindflakes.TeamRED.menuClasses.*;
 
+/**
+ * This class is used to write a set of MealMenu objects to a tagged XML format which is easier for applications to read.
+ * Writes using xml version 1.0, and UTF-8 encoding.
+ * @author Johan Henkens
+ *
+ */
 public class Writer {
 	
+	/** Writes the ArrayList of MealMenu objects to the PrintStream. For use with files, start a new PrintStream from
+	 * a FileOutputStream and pass it in.
+	 * @param ps the PrintStream the XML document will be written to.
+	 * @param menus the menus that will be written to an XML format.
+	 */
 	public static void writeToStream(PrintStream ps,ArrayList<MealMenu> menus){
 		ps.println("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>");
 		ps.println("<MealMenus>");
@@ -21,7 +32,7 @@ public class Writer {
 			ps.println("</MealMenu>");
 		}
 		ps.println("</MealMenus>");
-		
+		ps.close();
 	}
 	
 	private static String prepareForXML(String s){

@@ -6,10 +6,23 @@ import com.mindflakes.TeamRED.menuClasses.FoodItem;
 import com.mindflakes.TeamRED.menuClasses.MealMenu;
 import com.mindflakes.TeamRED.menuClasses.Venue;
 
+/**
+ * This class contains a reader that parses an XML file that is properly formatted for the RedMenuLib and generates MealMenu's from its contents.
+ * @author Johan Henkens
+ *
+ */
 public class Reader {
 	
+	/**
+	 * Reads the file contained in the scanner and, if there are no errors, returns an ArrayList of MealMenu's.
+	 * If the file is improperly formatted, the readFile method will return an empty, but non-null ArrayList.
+	 * The scanner should point to the start of the XML file ("<?xml version.....")
+	 * @param sc The scanner containing the file to be parsed
+	 * @return the MealMenu's generated from the file, or an empty but non-null ArrayList if there were errors.
+	 */
 	public static ArrayList<MealMenu> readFile(Scanner sc){
 		ArrayList<MealMenu> result = parseMealMenus(sc);
+		sc.close();
 		if(result==null) return new ArrayList<MealMenu>();
 		else return result;
 	}
@@ -33,7 +46,7 @@ public class Reader {
 			if(!sc.hasNext()) 
 				return null;
 			MealMenu tmp = parseMealMenu(sc);
-			if(tmp == null) return result;
+			if(tmp == null) return null;
 			else result.add(tmp);
 			if(!sc.hasNext()) 
 				return null;

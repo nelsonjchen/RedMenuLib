@@ -1,6 +1,8 @@
 package com.mindflakes.TeamRED.menuUtils;
 
 import org.joda.time.DateTime;
+import org.joda.time.Interval;
+
 import com.mindflakes.TeamRED.menuClasses.*;
 import java.util.ArrayList;
 
@@ -19,6 +21,73 @@ public class MealMenuSearchQuery {
 	 */
 	public MealMenuSearchQuery(ArrayList<MealMenu> menus){
 		this.menus = menus;
+	}	
+	
+	
+	/**
+	 * Searches for MealMenu which start specifically at the time specified.
+	 * @param startDate the specific time at which the meal starts
+	 * @return a new MealMenuSearchQuery with only MealMenus which start exactly at the startDate
+	 */
+	public MealMenuSearchQuery findStartingAt(DateTime startDate){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(menu.getMealInterval().getStart().equals(startDate)) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
+	}
+	
+	/**
+	 * Searches for MealMenu which start during the Interval specified.
+	 * @param startInterval the time interval at which the meal starts
+	 * @return a new MealMenuSearchQuery with only MealMenus which start during the interval
+	 */
+	public MealMenuSearchQuery findStartingAt(Interval startInterval){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(startInterval.contains(menu.getMealInterval().getStart())) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
+	}
+	
+	/**
+	 * Searches for MealMenu which end specifically at the time specified.
+	 * @param startDate the specific time at which the meal ends
+	 * @return a new MealMenuSearchQuery with only MealMenus which end exactly at the startDate
+	 */
+	public MealMenuSearchQuery findEndingAt(DateTime startDate){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(menu.getMealInterval().getStart().equals(startDate)) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
+	}
+	
+	/**
+	 * Searches for MealMenu which end during the Interval specified.
+	 * @param startInterval the time interval at which the meal ends
+	 * @return a new MealMenuSearchQuery with only MealMenus which end during the interval
+	 */
+	public MealMenuSearchQuery findEndingAt(Interval startInterval){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(startInterval.contains(menu.getMealInterval().getEnd())) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
+	}
+	
+	/**
+	 * Searches for MealMenu which start after or at the start of the specified interval,
+	 * and end at or before the end of the specified interval
+	 * @param interval the time interval at which the meal ends
+	 * @return a new MealMenuSearchQuery with only MealMenus which end during the interval
+	 */
+	public MealMenuSearchQuery findEntirelyDuring(Interval interval){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(interval.contains(menu.getMealInterval())) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
 	}
 	
 	/** Searches for an exact match between the input string and the commons field in each MealMenu in the query
@@ -26,7 +95,6 @@ public class MealMenuSearchQuery {
 	 * @return a new MealMenuSearchQuery containing only the MealMenus with an exact match in the commons name
 	 */
 	public MealMenuSearchQuery findCommons(String commonsName){
-//		System.out.println("searching for commons: "+commonsName);
 		commonsName=commonsName.toLowerCase();
 		ArrayList<MealMenu> returnMenus = new ArrayList<MealMenu>();
 		for(MealMenu menu:menus){
@@ -36,10 +104,10 @@ public class MealMenuSearchQuery {
 	}
 	
 	/**
-	 * @return
+	 * Searches for all the Vegan FoodItems in the MealMenu and returns a new MealMenu containing only those items
+	 * @return a MealMenu containing only Vegan items.
 	 */
 	public MealMenuSearchQuery findVegan(){
-//		System.out.println("Searching for vegan");
 		ArrayList<MealMenu> veganMenus = new ArrayList<MealMenu>();
 		for(MealMenu menu:menus){
 			menu=menu.newMealMenuFromVegan();
@@ -48,8 +116,11 @@ public class MealMenuSearchQuery {
 		return new MealMenuSearchQuery(veganMenus);
 	}
 	
+	/**
+	 * Searches for all the Vegetarian FoodItems in the MealMenu and returns a new MealMenu containing only those items
+	 * @return a MealMenu containing only Vegetarian items.
+	 */
 	public MealMenuSearchQuery findVegetarian(){
-//		System.out.println("Searching for vegetarian");
 		ArrayList<MealMenu> vgtMenus = new ArrayList<MealMenu>();
 		for(MealMenu menu:menus){
 			menu=menu.newMealMenuFromVegetarian();
@@ -58,21 +129,21 @@ public class MealMenuSearchQuery {
 		return new MealMenuSearchQuery(vgtMenus);
 	}
 	
+	/**
+	 * Searches for all FoodItems containing a word the search string. Words can be grouped together as a single
+	 * word if they are surrounded by quotation marks ("). Search results are not prioritized by frequency of number of word matches
+	 * @param search
+	 * @return
+	 */
 	public MealMenuSearchQuery findFoodItem(String search){
 		ArrayList<String> searchParts = splitSearch(search);
 		ArrayList<MealMenu> searchMenus = new ArrayList<MealMenu>();
-//		System.out.print("Searchin for...: ");
-//		for(String s: searchParts){
-//			System.out.println(s+" ");
-//		}
-//		System.out.println();
 		for(MealMenu menu:menus){
 			boolean foundFoodInThisMenu = false;
-			try{
+//			try{
 				for(Venue venue:menu.getVenues()){
 					if(foundFoodInThisMenu) break;
 					for(FoodItem food:venue.getFoodItems()){
-						//					if(food.getName().contains("Focaccia")) System.out.println(food.getName());
 						if(foundFoodInThisMenu) break;
 						for(String s: searchParts){
 							if(food.getName().toLowerCase().contains(s)){
@@ -82,9 +153,9 @@ public class MealMenuSearchQuery {
 						}
 					}
 				}
-			}catch(NullPointerException e){
-				searchMenus.add(menu);
-			}
+//			}catch(NullPointerException e){
+//				searchMenus.add(menu);
+//			}
 			if(foundFoodInThisMenu) searchMenus.add(menu);
 		}
 		return new MealMenuSearchQuery(searchMenus);	
@@ -97,11 +168,9 @@ public class MealMenuSearchQuery {
 		while(search.indexOf('\"')!=-1){
 			if(search.indexOf('\"',search.indexOf('\"')+1)!=-1){
 				if(search.indexOf('\"')!=0){
-//					System.out.println("adding: "+search.substring(0,search.indexOf('\"')).trim());
 					splitStrings.add(search.substring(0,search.indexOf('\"')).trim());
 				}
 				search=search.substring(search.indexOf('\"')+1);
-//				System.out.println("adding:" +search.substring(0,search.indexOf('\"')).trim());
 				splitStrings.add(search.substring(0,search.indexOf('\"')).trim());
 				search=search.substring(search.indexOf('\"')+1);
 			} else{
@@ -114,7 +183,6 @@ public class MealMenuSearchQuery {
 		for(String s:search.split(" ")){
 			if(s.length()!=0){
 				splitStrings.add(s);
-//				System.out.println("adding: "+s);
 			}
 		}
 		for(int i = 0; i<splitStrings.size();i++){
@@ -125,6 +193,10 @@ public class MealMenuSearchQuery {
 		return splitStrings;
 	}
 	
+	/**
+	 * Returns the MealMenus that this SearchQuery contains. If called directly after a constructor, will return the input array.
+	 * @return an ArrayList of MealMenus
+	 */
 	public ArrayList<MealMenu> returnResults(){
 		return menus;
 	}

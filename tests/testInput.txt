@@ -1,0 +1,2128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MealMenus>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Breakfast</MealName>
+<StartMillis>1274710500000</StartMillis>
+<EndMillis>1274720400000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Oatmeal</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Cream Of Wheat</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Cheese Omelet</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sausage Patties</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Make Your Own Waffle</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fresh Scrambled Eggs</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Diced Potatoes</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Cinnamon Coffee Cake</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Bagels And Cream Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Breakfast</MealName>
+<StartMillis>1274796900000</StartMillis>
+<EndMillis>1274806800000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Oatmeal</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>English Muffin Sandwich</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Make Your Own Waffle</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Pancakes</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fresh Scrambled Eggs</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Hash Browns</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Strawberry Cr.ch. Coff Cake (w/nuts)</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Morning Glory Muffin (w/nuts)</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Breakfast</MealName>
+<StartMillis>1274883300000</StartMillis>
+<EndMillis>1274893200000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Oatmeal</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Cream Of Wheat</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Pancakes</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Make Your Own Waffle</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chorizo And Eggs</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fresh Scrambled Eggs</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Potatoes And Onions</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vgt Blueberry Muffin</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Donuts</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Breakfast</MealName>
+<StartMillis>1274969700000</StartMillis>
+<EndMillis>1274979600000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Oatmeal</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt French Toast</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Make Your Own Waffle</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fresh Scrambled Eggs</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Bacon</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Hash Browns</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Raspberry White Chocolate Muffin</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chocolate Chip Scone</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Breakfast</MealName>
+<StartMillis>1275056100000</StartMillis>
+<EndMillis>1275066000000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Oatmeal</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Arroz Con Leche</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Scrambled Eggs With Bacon And Cheese</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Make Your Own Waffle</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Banana Nut Pancakes</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fresh Scrambled Eggs</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Potatoes Obrien</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Cranberry Orange Muffin</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Whole Wheat Banana</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Lunch</MealName>
+<StartMillis>1274724000000</StartMillis>
+<EndMillis>1274736600000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vgt Tortellini Pesto Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Coleslaw W/ Vinaigrette</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sliced Turkey</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Shaved Ham</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Jack</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced American Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Cajun Chicken Stir Fry</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Vegetable Stir Fry</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Spinach Lentil Soup</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Refried Beans</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Mixed Vegetables</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Beef Enchiladas</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Spanish Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Smoked Bbq Chicken</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Pizza Quattro Formaggio (rounds)</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Charburger</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Gardenburger</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Quesadilla</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Krinkle Cut Fries</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Potato Rolls</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Devils Food Cupcakes</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Butter Cream Icing</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Toll House Bars</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Lunch</MealName>
+<StartMillis>1274810400000</StartMillis>
+<EndMillis>1274823000000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Brazilian Black Bean Salad</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Macaroni Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sliced Roast Beef</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Turkey Pastrami</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Provolone</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Cheddar</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Kung Pao Beef (w/nuts)</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Tofu Vegetable Kung Pao (w/nuts)</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Chicken Noodle Soup</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Corn</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Italian Sub</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Garlic Mushroom Turnover</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Chicken Florentine With White Sauce</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Pizza Pineapple &amp; Jalapeno</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Cheeseburger</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Black Bean Burger</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Grilled Turkey &amp; Swiss On Sourdough</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Krinkle Cut Fries</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Whole Wheat Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chocolate Chip Cookies</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Brownies</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chocolate Icing</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Lunch</MealName>
+<StartMillis>1274896800000</StartMillis>
+<EndMillis>1274909400000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vgt Sour Cream Vegetable Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Salsa Salad</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sliced Turkey</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Dry Italian Salami</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Cheddar</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Swiss</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Pork With Green Beans</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Lemon Ginger Tofu</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Cream Of Tomato Soup</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Fresh Spinach W/garlic</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Quesadilla</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chicken Quesadilla</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Black Beans</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Ham &amp; Pineapple</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Tomato Basil</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Charburger</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Veggie Griller Sandwich</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Grilled Cheddar On Wheat</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Shoestring Fries</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Lemon Poppyseed Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Rice Krispie Treats</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Oatmeal Raisin Cookies</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Lunch</MealName>
+<StartMillis>1274983200000</StartMillis>
+<EndMillis>1274995800000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Italian Chunk Salad</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Oriental Salad</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Shaved Ham</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Provolone</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Natural Swiss</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Egg Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Noodles</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>General Tsos Chicken</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Sweet/sour Tofu &amp; Veg W/almonds</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Split Pea Soup</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Stir Fry Broc/cauliflower/carrot</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chips Potato Wavy Bulk</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Pulled Pork Sandwich</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sausage Olive</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Vegetable</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Grilled Chicken Breast</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Gardenburger</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Grilled Cheese Sandwich</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Shoestring Fries</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Cracked Wheat Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Canadian Tea Cookies</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Mint Sticks</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Lunch</MealName>
+<StartMillis>1275069600000</StartMillis>
+<EndMillis>1275082200000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Chinese Chicken Salad (w/nuts)</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Fresh Garden Pasta Salad</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sliced Turkey Pastrami</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced American Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Natural Swiss</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Tuna Salad</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Lolitas Paella Valenciana</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Beef Noodle Soup</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Steamed Crookneck Squash</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Cajun Chicken Char Grilled Sandwich</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Eggplant Parmigiano</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Pepperoni</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Three Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Charburger</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Veggie Griller Sandwich</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Grilled Cheese On Sourdough</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Krinkle Cut Fries</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Almond Braids (w/nuts)</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Lemon Bars</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Toffee Squares (w/nuts)</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Dinner</MealName>
+<StartMillis>1274745600000</StartMillis>
+<EndMillis>1274756400000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sliced Turkey</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Shaved Ham</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Jack</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced American Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Teriyaki Chicken Stir Fry</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Vegetable Stir Fry</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Teriyaki Sauce</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Nancys Sauteed Zucchini</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Steamed Crookneck Squash</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Fresh Cauliflower</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Bbq Chicken</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Rice Pilaf W/mushrooms</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pasta</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Hearty Vegetable Soup</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Spaghetti</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Meat Sauce</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Spirals With Marinara Sauce</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Smoked Bbq Chicken</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Pizza Quattro Formaggio (rounds)</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Parmesan Herb Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Cream Cheese Pie</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Dinner</MealName>
+<StartMillis>1274832000000</StartMillis>
+<EndMillis>1274842800000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Tortilla Chips &amp; Salsa</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Pita Chips &amp; Hummus</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chicken Curry</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Curry Tofu And Vegetables</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Greek Green Beans</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Grilled Polenta</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Au Jus</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Roast Beef</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Marinara Sauce</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Oven Roasted Red Potatoes</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sauteed Fresh Veggies W/garlic</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pasta</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vgt Cream Of Broccoli Soup</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Pasta Primavera</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Linguini</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>White Clam Sauce</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Chicken Florentine With White Sauce</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Pizza Pineapple &amp; Jalapeno</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Roasted Garlic Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Black Forest Cake</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Dinner</MealName>
+<StartMillis>1274918400000</StartMillis>
+<EndMillis>1274929200000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sliced Turkey</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Dry Italian Salami</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Cheddar</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Swiss</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Teriyaki Beef</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Stir Fry Vegetables W/tofu</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Fresh Green Beans</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Fresh Broccoli Spears</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Rotisserie Chicken</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Grilled Fish</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Applesauce</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Risotto W/ Fresh Vegetables</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pasta</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Fettucini With Mustard Chicken Sauce</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Spaghetti</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Marinara Sauce</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Mixed Grain Soup</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Brown Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Ham &amp; Pineapple</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Tomato Basil</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Crusty French Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Black Bottom Banana Cream</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Dinner</MealName>
+<StartMillis>1275004800000</StartMillis>
+<EndMillis>1275015600000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Tortilla Chips &amp; Salsa</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Pita Chips &amp; Hummus</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Pork With Vegetables</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Stir Fry Noodles W/ Vegetables</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Fresh Sauted Carrots</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Steamed Zucchini</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Lasagna</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Macaroni And Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pasta</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Tortilla Soup</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Penne (mostacioli)</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chicken Marinara Sauce</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Linguini</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Pesto</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sausage Olive</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Vegetable</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Garlic Rolls</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Boston Cream Pie</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Dinner</MealName>
+<StartMillis>1275091200000</StartMillis>
+<EndMillis>1275102000000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sliced Turkey Pastrami</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced American Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Natural Swiss</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Tuna Salad</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Cashew Chicken (w/nuts)</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Vegetable Fried Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Peas With Onions</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fresh Corn On Cob</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Stuffed Tomatoes</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Rotisserie Pork Loin</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Chutney</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Au Gratin Potatoes</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pasta</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vgt Cream Of Mushroom</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Fettucini Carolina</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Penne (mostacioli)</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sausage Marinara Sauce</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Pepperoni</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Three Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Onion Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Very Chocolate Cake</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chocolate Icing</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Dinner</MealName>
+<StartMillis>1275177600000</StartMillis>
+<EndMillis>1275188400000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chicken Pad Thai (w/nuts)</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Vegetable Pad Thai (w/nuts)</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Carrots W/ Fresh Thyme</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Green Beans</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Potato Gorda</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Black Bean Chili</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Honey Baked Chicken Quarters</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Rice Pilaf W/mushrooms</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pasta</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vgt Potato Leek Soup</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Spaghetti</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Meat Sauce</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Rotelli</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Garden Vegetable Marinara</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Taco Pizza</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Mushroom</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Pizza Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Marble Cake</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Dinner</MealName>
+<StartMillis>1275264000000</StartMillis>
+<EndMillis>1275274800000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Mongolian Grill</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Sticky Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Teriyaki Chicken Stir Fry</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Tofu Vegetable Stir Fry</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Spicy Sauce</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Peas</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Turkey Breast</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Herb Stuffing</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Garlic Mashed Potatoes</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Turkey Gravy</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Stir-fry Vegetables</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pasta</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Spaghetti Soup</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Baked Rigatoni Mozzerella</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Fettucini Alfredo</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Pizza</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Assorted Meat</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Tomato Pesto</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sourdough Bread</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Carrot Cake/crm.chz Icing (w/nuts)</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Brunch</MealName>
+<StartMillis>1275154200000</StartMillis>
+<EndMillis>1275166800000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Sliced Turkey</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Turkey Pastrami</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Natural Swiss</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Cheddar</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Pasta Fazool Soup</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Fresh Cauliflower</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Spicy Meatball Sandwich</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Fresh Mushroom Quiche</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Oatmeal</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Chilequilles</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sausage Links</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Make Your Own Waffle</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fresh Scrambled Eggs</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Potatoes And Onions</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Cinnamon &amp; Sugar Muffin</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Blueberry Coffee Cake</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+<MealMenu>
+<CommonsName>Carrillo</CommonsName>
+<MealName>Brunch</MealName>
+<StartMillis>1275240600000</StartMillis>
+<EndMillis>1275253200000</EndMillis>
+<ModMillis>1274730452000</ModMillis>
+<Venues>
+<Venue>
+<VenueName>Salads</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Caesar Salad</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Deli</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Shaved Ham</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Dry Italian Salami</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Cheddar</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Sliced Provolone</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Euro</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vgt Tomato Basil With Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Fresh Broccoli Spears</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fish Tacos</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vgt Vegetarian Tostada</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan Spanish Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Vegan White Rice</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Baked Potato</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Grill (Cafe)</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Vegan Oatmeal</FoodName>
+<FoodProperties>Vegan</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Grilled Ham</FoodName>
+<FoodProperties>None</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Make Your Own Waffle</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Fresh Scrambled Eggs</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Hash Browns</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+<Venue>
+<VenueName>Bakery</VenueName>
+<FoodItems>
+<FoodItem>
+<FoodName>Banana Coffee Cake (w/nuts)</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+<FoodItem>
+<FoodName>Bagels And Cream Cheese</FoodName>
+<FoodProperties>Vegetarian</FoodProperties>
+</FoodItem>
+</FoodItems>
+</Venue>
+</Venues>
+</MealMenu>
+</MealMenus>
