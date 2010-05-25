@@ -22,7 +22,123 @@ public class MealMenuSearchQuery {
 	public MealMenuSearchQuery(ArrayList<MealMenu> menus){
 		this.menus = menus;
 	}	
-
+	
+	
+	/** Sorts the current MealMenuSearchQuery by start time. 
+	 * <br><br>NOTE: This modifies the existing SearchQuery rather than creating a new one, and returns itself.
+	 * @param increasing If true, the first MealMenu entry will have the 'smallest' time. Otherwise, the other way around.
+	 * @return a sorted MealMenuSearchQuery based on start time.
+	 */
+	public MealMenuSearchQuery sortByStartTime(boolean increasing){
+		if(increasing) return sortByStartTimeIncreasing();
+		else return sortByStartTimeDecreasing();
+	}
+	
+	private MealMenuSearchQuery sortByStartTimeIncreasing(){
+		for(int toInsert = 1; toInsert<menus.size();toInsert++){
+			for(int o = 0; o<toInsert;o++){
+				if(menus.get(toInsert).getMealInterval().getStartMillis()<
+						menus.get(o).getMealInterval().getStartMillis()) menus.add(o,menus.remove(toInsert));
+			}
+		}
+		return this;
+	}
+	private MealMenuSearchQuery sortByStartTimeDecreasing(){
+		for(int toInsert = 1; toInsert<menus.size();toInsert++){
+			for(int o = 0; o<toInsert;o++){
+				if(menus.get(toInsert).getMealInterval().getStartMillis()>
+						menus.get(o).getMealInterval().getStartMillis()) menus.add(o,menus.remove(toInsert));
+			}
+		}
+		return this;
+	}
+	
+	/** Sorts the current MealMenuSearchQuery by start time. 
+	 * <br><br>NOTE: This modifies the existing SearchQuery rather than creating a new one, and returns itself.
+	 * @param increasing If true, the first MealMenu entry will have the 'smallest' time. Otherwise, the other way around.
+	 * @return a sorted MealMenuSearchQuery based on start time.
+	 */
+	public MealMenuSearchQuery sortByEndTime(boolean increasing){
+		if(increasing) return sortByEndTimeIncreasing();
+		else return sortByEndTimeDecreasing();
+	}
+	
+	private MealMenuSearchQuery sortByEndTimeIncreasing(){
+		for(int toInsert = 1; toInsert<menus.size();toInsert++){
+			for(int o = 0; o<toInsert;o++){
+				if(menus.get(toInsert).getMealInterval().getEndMillis()<
+						menus.get(o).getMealInterval().getEndMillis()) menus.add(o,menus.remove(toInsert));
+			}
+		}
+		return this;
+	}
+	private MealMenuSearchQuery sortByEndTimeDecreasing(){
+		for(int toInsert = 1; toInsert<menus.size();toInsert++){
+			for(int o = 0; o<toInsert;o++){
+				if(menus.get(toInsert).getMealInterval().getEndMillis()>
+						menus.get(o).getMealInterval().getEndMillis()) menus.add(o,menus.remove(toInsert));
+			}
+		}
+		return this;
+	}
+	
+	/** Sorts the current MealMenuSearchQuery by commons name, case insensitive.
+	 * <br><br>NOTE: This modifies the existing SearchQuery rather than creating a new one, and returns itself.
+	 * @param increasing If true, the first MealMenu entry will have the dining common name closest to 'a'. Otherwise, the other way around.
+	 * @return a sorted MealMenuSearchQuery based on dining commons name.
+	 */
+	public MealMenuSearchQuery sortByCommonsName(boolean increasing){
+		if(increasing) return sortByCommonsNameIncreasing();
+		else return sortByCommonsNameDecreasing();
+	}
+	
+	private MealMenuSearchQuery sortByCommonsNameIncreasing(){
+		for(int toInsert = 1; toInsert<menus.size();toInsert++){
+			for(int o = 0; o<toInsert;o++){
+				if(menus.get(toInsert).getCommonsName().compareToIgnoreCase(
+						menus.get(o).getCommonsName())<0) menus.add(o,menus.remove(toInsert));
+			}
+		}
+		return this;
+	}
+	private MealMenuSearchQuery sortByCommonsNameDecreasing(){
+		for(int toInsert = 1; toInsert<menus.size();toInsert++){
+			for(int o = 0; o<toInsert;o++){
+				if(menus.get(toInsert).getCommonsName().compareToIgnoreCase(
+						menus.get(o).getCommonsName())>0) menus.add(o,menus.remove(toInsert));
+			}
+		}
+		return this;
+	}
+	
+	/** Sorts the current MealMenuSearchQuery by meal name, case insensitive.
+	 * <br><br>NOTE: This modifies the existing SearchQuery rather than creating a new one, and returns itself.
+	 * @param increasing If true, the first MealMenu entry will have the meal name closest to 'a'. Otherwise, the other way around.
+	 * @return a sorted MealMenuSearchQuery based on meal name.
+	 */
+	public MealMenuSearchQuery sortByMealName(boolean increasing){
+		if(increasing) return sortByMealNameIncreasing();
+		else return sortByMealNameDecreasing();
+	}
+	
+	private MealMenuSearchQuery sortByMealNameIncreasing(){
+		for(int toInsert = 1; toInsert<menus.size();toInsert++){
+			for(int o = 0; o<toInsert;o++){
+				if(menus.get(toInsert).getMealName().compareToIgnoreCase(
+						menus.get(o).getMealName())<0) menus.add(o,menus.remove(toInsert));
+			}
+		}
+		return this;
+	}
+	private MealMenuSearchQuery sortByMealNameDecreasing(){
+		for(int toInsert = 1; toInsert<menus.size();toInsert++){
+			for(int o = 0; o<toInsert;o++){
+				if(menus.get(toInsert).getMealName().compareToIgnoreCase(
+						menus.get(o).getMealName())>0) menus.add(o,menus.remove(toInsert));
+			}
+		}
+		return this;
+	}
 
 	/**
 	 * Searches for MealMenu which start specifically at the time specified.
@@ -51,28 +167,55 @@ public class MealMenuSearchQuery {
 	}
 
 	/**
-	 * Searches for MealMenu which end exclusively before the time specified.
-	 * @param startDate the specific time at which the meal ends before
-	 * @return a new MealMenuSearchQuery with only MealMenus which end exclusively before the startDate
+	 * Searches for MealMenu which start exclusively before the time specified.
+	 * @param startDate the specific time at which the meal starts before
+	 * @return a new MealMenuSearchQuery with only MealMenus which start exclusively before the startDate
 	 */
 	public MealMenuSearchQuery findStartingBefore(DateTime startDate){
 		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
 		for(MealMenu menu:menus){
-			if(menu.getMealInterval().getEnd().isBefore(startDate)) result.add(menu);
+			if(menu.getMealInterval().getStart().isBefore(startDate)) result.add(menu);
 		}
 		return new MealMenuSearchQuery(result);
 	}
 
 	/**
-	 * Searches for MealMenu which end specifically before the time specified.
-	 * @param startDate the specific time at which the meal ends before
-	 * @return a new MealMenuSearchQuery with only MealMenus which end inclusively before or at the startDate
+	 * Searches for MealMenu which start specifically before the time specified.
+	 * @param startDate the specific time at which the meal starts before
+	 * @return a new MealMenuSearchQuery with only MealMenus which start inclusively before or at the startDate
 	 */
 	public MealMenuSearchQuery findStartingBeforeOrAt(DateTime startDate){
 		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
 		for(MealMenu menu:menus){
-			if(menu.getMealInterval().getEnd().isBefore(startDate) ||
-					menu.getMealInterval().getEnd().isEqual(startDate)) result.add(menu);
+			if(menu.getMealInterval().getStart().isBefore(startDate) ||
+					menu.getMealInterval().getStart().isEqual(startDate)) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
+	}
+	
+	/**
+	 * Searches for MealMenu which start exclusively after the time specified.
+	 * @param startDate the specific time at which the meal starts after
+	 * @return a new MealMenuSearchQuery with only MealMenus which start exclusively after the startDate
+	 */
+	public MealMenuSearchQuery findStartingAfter(DateTime startDate){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(menu.getMealInterval().getStart().isAfter(startDate)) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
+	}
+
+	/**
+	 * Searches for MealMenu which start specifically after the time specified.
+	 * @param startDate the specific time at which the meal starts after
+	 * @return a new MealMenuSearchQuery with only MealMenus which start inclusively after or at the startDate
+	 */
+	public MealMenuSearchQuery findStartingAfterOrAt(DateTime startDate){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(menu.getMealInterval().getStart().isAfter(startDate) ||
+					menu.getMealInterval().getStart().isEqual(startDate)) result.add(menu);
 		}
 		return new MealMenuSearchQuery(result);
 	}
@@ -128,6 +271,33 @@ public class MealMenuSearchQuery {
 		}
 		return new MealMenuSearchQuery(result);
 	}
+	
+	/**
+	 * Searches for MealMenu which end exclusively after the time specified.
+	 * @param endDate the specific time at which the meal ends after
+	 * @return a new MealMenuSearchQuery with only MealMenus which end exclusively after the endDate
+	 */
+	public MealMenuSearchQuery findEndingAfter(DateTime endDate){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(menu.getMealInterval().getEnd().isAfter(endDate)) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
+	}
+
+	/**
+	 * Searches for MealMenu which end specifically after the time specified.
+	 * @param endDate the specific time at which the meal ends after
+	 * @return a new MealMenuSearchQuery with only MealMenus which end inclusively after or at the endDate
+	 */
+	public MealMenuSearchQuery findEndingAfterOrAt(DateTime endDate){
+		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
+		for(MealMenu menu:menus){
+			if(menu.getMealInterval().getEnd().isAfter(endDate) ||
+					menu.getMealInterval().getEnd().isEqual(endDate)) result.add(menu);
+		}
+		return new MealMenuSearchQuery(result);
+	}
 
 	/**
 	 * Searches for MealMenu which start after or at the start of the specified interval,
@@ -143,7 +313,7 @@ public class MealMenuSearchQuery {
 		return new MealMenuSearchQuery(result);
 	}
 
-	/** Searches for an exact match between the input string and the commons field in each MealMenu in the query
+	/** Searches for an exact match between the input string and the commons field in each MealMenu in the query. Example commons name: "Carrillo"
 	 * @param commonsName the commonsName that will be compared with those of the MealMenus
 	 * @return a new MealMenuSearchQuery containing only the MealMenus with an exact match in the commons name
 	 */
@@ -215,7 +385,6 @@ public class MealMenuSearchQuery {
 	}
 
 	private ArrayList<String> splitSearch(String search){
-		System.out.println("splitting: " + search);
 		ArrayList<String> splitStrings = new ArrayList<String>();
 		search=search.toLowerCase();
 		while(search.indexOf('\"')!=-1){

@@ -26,7 +26,7 @@ public class ReaderWriterTests {
     @BeforeClass
     public static void oneTimeSetUp() {
     	try {
-			fromWeb = Reader.readFile(new Scanner(new File("tests/testInput.txt")));
+			fromWeb = Reader.readFile(new Scanner(new File("tests/testInput.xml")));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

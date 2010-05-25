@@ -20,7 +20,7 @@ public class MealMenuTests {
 	private ArrayList<MealMenu> currentMenus;
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		menus = Reader.readFile(new Scanner(new File("tests/testInput.txt")));
+		menus = Reader.readFile(new Scanner(new File("tests/testInput.xml")));
 	}
 
 	@AfterClass
