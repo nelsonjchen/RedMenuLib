@@ -17,10 +17,6 @@
 					<target>1.5</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.3</version>
-			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -31,6 +27,7 @@
 						<include>**/*Tests.java</include>
 					</includes>
 				</configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
