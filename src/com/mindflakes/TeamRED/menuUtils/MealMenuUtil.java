@@ -9,10 +9,16 @@ import com.mindflakes.TeamRED.menuClasses.FoodItem;
 import com.mindflakes.TeamRED.menuClasses.MealMenu;
 import com.mindflakes.TeamRED.menuClasses.Venue;
 
+/**
+ * Class used for various displaying techniques not necessarily used in final production. Good for visual debugging.
+ * @author Johan Henkens
+ * @author Nelson Chen
+ *
+ */
 public  class MealMenuUtil {
 	
     /** Prints each <code>MealMenu</code> in this Scraper to <code>System.out</code> in a clean format. 
-     * 
+     * @param menus ArrayList of MealMenus that will be printed to System.out
      */
     public static void printAll(ArrayList<MealMenu> menus){
     	for(MealMenu menu : menus){
@@ -33,6 +39,11 @@ public  class MealMenuUtil {
     }
 
 	
+	/**
+	 * Generates an simple string from the MealMenu for quick displaying.
+	 * @param menu MealMenu to be used to generate an simple string
+	 * @return the generated simple string
+	 */
 	public static String mealMenuString(MealMenu menu) {
 		String append = "*";
 		append += menu.getCommonsName() + "*\n";
@@ -45,6 +56,11 @@ public  class MealMenuUtil {
 		return append;
 	}
 	
+	/**
+	 * Generates an html string from the MealMenu for quick displaying.
+	 * @param menu MealMenu to be used to generate an html string
+	 * @return the generated html string
+	 */
 	public static String mealMenuSimpleHTML(MealMenu menu) {
 		String append = "<div class=\"meal\">";
 		append += "<h2>" + menu.getCommonsName() + "</h2>\n";
@@ -76,6 +92,11 @@ public  class MealMenuUtil {
 		return append;
 	}
 	
+	/**
+	 * Generates an html string from the MealMenu for rss displaying.
+	 * @param menu MealMenu to be used to generate an html string
+	 * @return the generated html string
+	 */
 	public static String mealMenuSimpleRSSHTML(MealMenu menu) {
 		String append = "";
 
