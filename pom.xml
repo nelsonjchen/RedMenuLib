@@ -5,7 +5,7 @@
 	<artifactId>redmenulib</artifactId>
 	<name>RedMenuLib</name>
 	<version>0.1.0</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
 	<url>teamred.mindflakes.com</url>
 	<organization>
@@ -54,9 +54,7 @@
 		</dependency>
 	</dependencies>
 
-	<modules>
-		<module>../RedMenuLib</module>
-	</modules>
+	
 
 
 
