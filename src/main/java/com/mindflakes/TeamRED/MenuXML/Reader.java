@@ -1,8 +1,10 @@
 package com.mindflakes.TeamRED.MenuXML;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.zip.GZIPInputStream;
@@ -181,7 +183,9 @@ public class Reader {
 				(properties.equals("Vegan"))?true:false,
 						(properties.equals("Vegetarian")||properties.equals("Vegan"))?true:false);
 	}
-	
+	/*
+	 * Adapted from :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress-a-file-in-the-gip-format.html
+	 */
 	public static File uncompressFile(File inFile){
 		String result;
 		if(!inFile.toString().endsWith(".gz")){
@@ -197,18 +201,15 @@ public class Reader {
 		return uncompressFile(inFile,new File(result));
 		
 	}
-	
 	/*
 	 * Adapted from :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress-a-file-in-the-gip-format.html
 	 */
-	public static File uncompressFile(File inFile, File outFile){
+	public static boolean uncompressFile(FileInputStream input, FileOutputStream out){
 		  try {
 		        // Open the compressed file
-		        GZIPInputStream in = new GZIPInputStream(new FileInputStream(inFile));
-		    
-		        // Open the output file
-		        FileOutputStream out = new FileOutputStream(outFile);
-		    
+		        GZIPInputStream in = new GZIPInputStream(input);
+		       
+
 		        // Transfer bytes from the compressed file to the output file
 		        byte[] buf = new byte[1024];
 		        int len;
@@ -219,10 +220,21 @@ public class Reader {
 		        // Close the file and stream
 		        in.close();
 		        out.close();
-		        return outFile;
+		        return true;
 		    } catch (IOException e) {
-		    	return null;
+		    	return false;
 		    }
-
+	}
+	
+	/*
+	 * Adapted from :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress-a-file-in-the-gip-format.html
+	 */
+	public static File uncompressFile(File inFile, File outFile){
+		try {
+			return(uncompressFile(new FileInputStream(inFile),new FileOutputStream(outFile)))?outFile:null;
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			return null;
+		}
 	}
 }
