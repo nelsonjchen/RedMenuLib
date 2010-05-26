@@ -1,6 +1,11 @@
 package com.mindflakes.TeamRED.MenuXML;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.zip.GZIPInputStream;
 
 import com.mindflakes.TeamRED.menuClasses.FoodItem;
 import com.mindflakes.TeamRED.menuClasses.MealMenu;
@@ -175,5 +180,49 @@ public class Reader {
 		return new FoodItem(fixFromXML(foodName),
 				(properties.equals("Vegan"))?true:false,
 						(properties.equals("Vegetarian")||properties.equals("Vegan"))?true:false);
+	}
+	
+	public static File uncompressFile(File inFile){
+		String result;
+		if(!inFile.toString().endsWith(".gz")){
+			if(inFile.toString().indexOf('.')!=-1){
+				result = inFile.toString();
+				result = result.substring(0,result.indexOf('.'))+".unzip"+result.substring(result.indexOf('.'),result.indexOf(".unz")+1);
+			} else{
+				result = inFile.toString()+".unzip";
+			}
+		} else{
+			result = inFile.toString().substring(0,inFile.toString().length()-3);
+		}
+		return uncompressFile(inFile,new File(result));
+		
+	}
+	
+	/*
+	 * Adapted from :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress-a-file-in-the-gip-format.html
+	 */
+	public static File uncompressFile(File inFile, File outFile){
+		  try {
+		        // Open the compressed file
+		        GZIPInputStream in = new GZIPInputStream(new FileInputStream(inFile));
+		    
+		        // Open the output file
+		        FileOutputStream out = new FileOutputStream(outFile);
+		    
+		        // Transfer bytes from the compressed file to the output file
+		        byte[] buf = new byte[1024];
+		        int len;
+		        while ((len = in.read(buf)) > 0) {
+		            out.write(buf, 0, len);
+		        }
+		    
+		        // Close the file and stream
+		        in.close();
+		        out.close();
+		        return outFile;
+		    } catch (IOException e) {
+		    	return null;
+		    }
+
 	}
 }

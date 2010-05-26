@@ -1,7 +1,12 @@
 package com.mindflakes.TeamRED.MenuXML;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.zip.GZIPOutputStream;
 
 import com.mindflakes.TeamRED.menuClasses.*;
 
@@ -61,5 +66,38 @@ public class Writer {
 		}
 		ps.println("</FoodItems>");
 	}
+	
+	/*
+	 * Code used from:
+	 * http://www.java-tips.org/java-se-tips/java.util.zip/how-to-compress-a-file-in-the-gip-format.html
+	 * 
+	 */
+	public static File compressFile(File inFile){
+	    try {
+	        // Create the GZIP output stream
+	    	File out = new File(inFile.toString()+".gz");
+	        GZIPOutputStream outFile = new GZIPOutputStream(new FileOutputStream(out));
+	    
+	        // Open the input file
+	        FileInputStream in = new FileInputStream(inFile);
+	    
+	        // Transfer bytes from the input file to the GZIP output stream
+	        byte[] buf = new byte[1024];
+	        int len;
+	        while ((len = in.read(buf)) > 0) {
+	        	outFile.write(buf, 0, len);
+	        }
+	        in.close();
+	    
+	        // Complete the GZIP file
+	        outFile.finish();
+	        outFile.close();
+	        return out;
+	    } catch (IOException e) {
+	    	System.err.println("Error while compressing.");
+	    	e.printStackTrace();
+	    	return null;
+	    }
+	}	
 
 }

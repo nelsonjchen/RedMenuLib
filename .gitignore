@@ -15,6 +15,12 @@ gen
 local.properties
 *.jar
 target/**
+<<<<<<< HEAD
 .classpath 
 .project 
 .settings
+=======
+.project
+.classpath
+.settings/**
+>>>>>>> 5ba7ae8d3f4e4358141cb9224072d4db7992305b
