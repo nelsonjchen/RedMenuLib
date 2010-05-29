@@ -8,8 +8,11 @@ import java.io.Serializable;
  * @author Johan Henkens
  *
  */
-@SuppressWarnings("serial")
 public class FoodItem implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 554218802585594619L;
 	private String name;
 	private boolean vegan;
 	private boolean vegetarian;

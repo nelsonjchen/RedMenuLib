@@ -7,8 +7,11 @@ import java.util.ArrayList;
  * @author Johan Henkens
  *
  */
-@SuppressWarnings("serial")
 public class Venue implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6037051492540954687L;
 	private String name;
 	private ArrayList<FoodItem> foodItems;
 	/** Constructs a <code>Venue</code> with the specified name and FoodItems to be served.

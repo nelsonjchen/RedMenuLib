@@ -1,10 +1,11 @@
 package com.mindflakes.TeamRED.MenuXML;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.zip.GZIPInputStream;
@@ -14,227 +15,326 @@ import com.mindflakes.TeamRED.menuClasses.MealMenu;
 import com.mindflakes.TeamRED.menuClasses.Venue;
 
 /**
- * This class contains a reader that parses an XML file that is properly formatted for the RedMenuLib and generates MealMenu's from its contents.
+ * This class contains a reader that parses an XML file that is properly
+ * formatted for the RedMenuLib and generates MealMenu's from its contents.
+ * 
  * @author Johan Henkens
- *
+ * 
  */
 public class Reader {
-	
+
 	/**
-	 * Reads the file contained in the scanner and, if there are no errors, returns an ArrayList of MealMenu's.
-	 * If the file is improperly formatted, the readFile method will return an empty, but non-null ArrayList.
-	 * The scanner should point to the start of the XML file ("<?xml version.....")
-	 * @param sc The scanner containing the file to be parsed
-	 * @return the MealMenu's generated from the file, or an empty but non-null ArrayList if there were errors.
+	 * Reads the file contained in the scanner and, if there are no errors,
+	 * returns an ArrayList of MealMenu's. If the file is improperly formatted,
+	 * the readFile method will return an empty, but non-null ArrayList. The
+	 * scanner should point to the start of the XML file ("<?xml version.....")
+	 * 
+	 * @param sc
+	 *            The scanner containing the file to be parsed
+	 * @return the MealMenu's generated from the file, or an empty but non-null
+	 *         ArrayList if there were errors.
 	 */
-	public static ArrayList<MealMenu> readFile(Scanner sc){
+	public static ArrayList<MealMenu> readFile(Scanner sc) {
 		ArrayList<MealMenu> result = parseMealMenus(sc);
 		sc.close();
-		if(result==null) return new ArrayList<MealMenu>();
-		else return result;
+		if (result == null)
+			return new ArrayList<MealMenu>();
+		else
+			return result;
 	}
-	
-	private static String fixFromXML(String s){
-		return s.replaceAll("&amp;","&").replaceAll("&lt;","<").replaceAll("&gt;",">").replaceAll("&apos;","\'").replaceAll("&quot;","\"");
+
+	private static String fixFromXML(String s) {
+		return s.replaceAll("&amp;", "&").replaceAll("&lt;", "<").replaceAll(
+				"&gt;", ">").replaceAll("&apos;", "\'").replaceAll("&quot;",
+				"\"");
 	}
-	
-	
-	private static ArrayList<MealMenu> parseMealMenus(Scanner sc){
-		if(!sc.hasNext()||!sc.nextLine().equals("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>")) return null;
-		if(!sc.hasNext()||!sc.nextLine().equals("<MealMenus>")) 
+
+	private static ArrayList<MealMenu> parseMealMenus(Scanner sc) {
+		if (!sc.hasNext()
+				|| !sc.nextLine().equals(
+						"<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"))
+			return null;
+		if (!sc.hasNext() || !sc.nextLine().equals("<MealMenus>"))
 			return null;
 		ArrayList<MealMenu> result = new ArrayList<MealMenu>();
 		String line;
-		if(sc.hasNext()){
+		if (sc.hasNext()) {
 			line = sc.nextLine();
-		} else 
+		} else
 			return null;
-		while(line.equals("<MealMenu>")){
-			if(!sc.hasNext()) 
+		while (line.equals("<MealMenu>")) {
+			if (!sc.hasNext())
 				return null;
 			MealMenu tmp = parseMealMenu(sc);
-			if(tmp == null) return null;
-			else result.add(tmp);
-			if(!sc.hasNext()) 
+			if (tmp == null)
+				return null;
+			else
+				result.add(tmp);
+			if (!sc.hasNext())
 				return null;
 			line = sc.nextLine();
 		}
-		if(!line.equals("</MealMenus>")) 
+		if (!line.equals("</MealMenus>"))
 			return null;
 		return result;
 	}
 
-	private static MealMenu parseMealMenu(Scanner sc){
+	private static MealMenu parseMealMenu(Scanner sc) {
 		String commonsName = sc.nextLine();
-		if(!commonsName.startsWith("<CommonsName>") || !commonsName.endsWith("</CommonsName>") || !sc.hasNext()){
+		if (!commonsName.startsWith("<CommonsName>")
+				|| !commonsName.endsWith("</CommonsName>") || !sc.hasNext()) {
 			return null;
 		}
 		String mealName = sc.nextLine();
-		if(!mealName.startsWith("<MealName>") || !mealName.endsWith("</MealName>") || !sc.hasNext()){
+		if (!mealName.startsWith("<MealName>")
+				|| !mealName.endsWith("</MealName>") || !sc.hasNext()) {
 			return null;
 		}
-		String startMillisString = sc.nextLine();		
-		if(!startMillisString.startsWith("<StartMillis>") || !startMillisString.endsWith("</StartMillis>") || !sc.hasNext()){
+		String startMillisString = sc.nextLine();
+		if (!startMillisString.startsWith("<StartMillis>")
+				|| !startMillisString.endsWith("</StartMillis>")
+				|| !sc.hasNext()) {
 			return null;
 		}
-		String endMillisString = sc.nextLine();		
-		if(!endMillisString.startsWith("<EndMillis>") || !endMillisString.endsWith("</EndMillis>") || !sc.hasNext()){
+		String endMillisString = sc.nextLine();
+		if (!endMillisString.startsWith("<EndMillis>")
+				|| !endMillisString.endsWith("</EndMillis>") || !sc.hasNext()) {
 			return null;
 		}
-		String modMillisString = sc.nextLine();		
-		if(!modMillisString.startsWith("<ModMillis>") || !modMillisString.endsWith("</ModMillis>") || !sc.hasNext()){
+		String modMillisString = sc.nextLine();
+		if (!modMillisString.startsWith("<ModMillis>")
+				|| !modMillisString.endsWith("</ModMillis>") || !sc.hasNext()) {
 			return null;
 		}
 		ArrayList<Venue> venues = parseVenues(sc);
-		if(venues==null || !sc.hasNext() || !sc.nextLine().equals("</MealMenu>")) 
+		if (venues == null || !sc.hasNext()
+				|| !sc.nextLine().equals("</MealMenu>"))
 			return null;
-		try{
-			commonsName = commonsName.substring(commonsName.indexOf('>')+1,commonsName.lastIndexOf("</"));
-			mealName = mealName.substring(mealName.indexOf('>')+1,mealName.lastIndexOf("</"));
-			Long startMillis = Long.parseLong(startMillisString.substring(startMillisString.indexOf('>')+1,startMillisString.lastIndexOf("</")));
-			Long endMillis = Long.parseLong(endMillisString.substring(endMillisString.indexOf('>')+1,endMillisString.lastIndexOf("</")));
-			Long modMillis = Long.parseLong(modMillisString.substring(modMillisString.indexOf('>')+1,modMillisString.lastIndexOf("</")));
-			return new MealMenu(fixFromXML(commonsName),startMillis,endMillis,modMillis,venues,fixFromXML(mealName));
-		} catch(NumberFormatException e){
+		try {
+			commonsName = commonsName.substring(commonsName.indexOf('>') + 1,
+					commonsName.lastIndexOf("</"));
+			mealName = mealName.substring(mealName.indexOf('>') + 1, mealName
+					.lastIndexOf("</"));
+			Long startMillis = Long.parseLong(startMillisString.substring(
+					startMillisString.indexOf('>') + 1, startMillisString
+							.lastIndexOf("</")));
+			Long endMillis = Long.parseLong(endMillisString.substring(
+					endMillisString.indexOf('>') + 1, endMillisString
+							.lastIndexOf("</")));
+			Long modMillis = Long.parseLong(modMillisString.substring(
+					modMillisString.indexOf('>') + 1, modMillisString
+							.lastIndexOf("</")));
+			return new MealMenu(fixFromXML(commonsName), startMillis,
+					endMillis, modMillis, venues, fixFromXML(mealName));
+		} catch (NumberFormatException e) {
 			return null;
 		}
 	}
-	
-	private static ArrayList<Venue> parseVenues(Scanner sc){
-		if(!sc.hasNext() || !sc.nextLine().equals("<Venues>")) 
+
+	private static ArrayList<Venue> parseVenues(Scanner sc) {
+		if (!sc.hasNext() || !sc.nextLine().equals("<Venues>"))
 			return null;
 		ArrayList<Venue> result = new ArrayList<Venue>();
 		String line;
-		if(sc.hasNext()){
+		if (sc.hasNext()) {
 			line = sc.nextLine();
-		} else 
+		} else
 			return null;
-		//Checks if scanner has a new line. Checks if that line is equal to "<Venue>", then checks there is still another line
-		while(line.equals("<Venue>")){
-			if(!sc.hasNext()) 
+		// Checks if scanner has a new line. Checks if that line is equal to
+		// "<Venue>", then checks there is still another line
+		while (line.equals("<Venue>")) {
+			if (!sc.hasNext())
 				return null;
 			Venue tmp = parseVenue(sc);
-			if(tmp==null) 
+			if (tmp == null)
 				return null;
-			else result.add(tmp);
-			
-			if(!sc.hasNext()) 
+			else
+				result.add(tmp);
+
+			if (!sc.hasNext())
 				return null;
 			line = sc.nextLine();
 		}
-		if(!line.equals("</Venues>") || !sc.hasNext()) 
+		if (!line.equals("</Venues>") || !sc.hasNext())
 			return null;
 		return result;
 	}
-	
-	private static Venue parseVenue(Scanner sc){
+
+	private static Venue parseVenue(Scanner sc) {
 		String venueName = sc.nextLine();
-		if(!sc.hasNext() || !venueName.startsWith("<VenueName>") || !venueName.endsWith("</VenueName>")) 
+		if (!sc.hasNext() || !venueName.startsWith("<VenueName>")
+				|| !venueName.endsWith("</VenueName>"))
 			return null;
 		ArrayList<FoodItem> foods = parseFoods(sc);
-		if(foods==null || !sc.hasNext() || !sc.nextLine().equals("</Venue>")) 
+		if (foods == null || !sc.hasNext() || !sc.nextLine().equals("</Venue>"))
 			return null;
-	
-		venueName = venueName.substring(venueName.indexOf('>')+1,venueName.lastIndexOf("</"));
-		return new Venue(fixFromXML(venueName),foods);
+
+		venueName = venueName.substring(venueName.indexOf('>') + 1, venueName
+				.lastIndexOf("</"));
+		return new Venue(fixFromXML(venueName), foods);
 	}
-	
-	private static ArrayList<FoodItem> parseFoods(Scanner sc){
-		if(!sc.hasNext()|| !sc.nextLine().equals("<FoodItems>")) 
+
+	private static ArrayList<FoodItem> parseFoods(Scanner sc) {
+		if (!sc.hasNext() || !sc.nextLine().equals("<FoodItems>"))
 			return null;
 		ArrayList<FoodItem> result = new ArrayList<FoodItem>();
 		String line;
-		if(sc.hasNext()){
+		if (sc.hasNext()) {
 			line = sc.nextLine();
-		} else 
+		} else
 			return null;
-		while(line.equals("<FoodItem>")){
-			if(!sc.hasNext()) 
+		while (line.equals("<FoodItem>")) {
+			if (!sc.hasNext())
 				return null;
-			
+
 			FoodItem tmp = parseFood(sc);
-			if(tmp==null) 
-				return null; 
-			else result.add(tmp);
-			
-			if(!sc.hasNext()) 
+			if (tmp == null)
+				return null;
+			else
+				result.add(tmp);
+
+			if (!sc.hasNext())
 				return null;
 			line = sc.nextLine();
 		}
-		if(!line.equals("</FoodItems>") || !sc.hasNext()) 
+		if (!line.equals("</FoodItems>") || !sc.hasNext())
 			return null;
 		return result;
 	}
-	
-	private static FoodItem parseFood(Scanner sc){
+
+	private static FoodItem parseFood(Scanner sc) {
 		String foodName = sc.nextLine();
-		if(!sc.hasNext() || !foodName.startsWith("<FoodName>") || !foodName.endsWith("</FoodName>")) 
+		if (!sc.hasNext() || !foodName.startsWith("<FoodName>")
+				|| !foodName.endsWith("</FoodName>"))
 			return null;
 		String properties = sc.nextLine();
-		if(!sc.hasNext() || !properties.startsWith("<FoodProperties>") || !properties.endsWith("</FoodProperties>")) 
+		if (!sc.hasNext() || !properties.startsWith("<FoodProperties>")
+				|| !properties.endsWith("</FoodProperties>"))
 			return null;
-		
-		foodName = foodName.substring(foodName.indexOf('>')+1,foodName.lastIndexOf("</"));
-		properties = properties.substring(properties.indexOf('>')+1,properties.lastIndexOf("</"));
-		if(!sc.hasNext()||!sc.nextLine().equals("</FoodItem>")) 
-			return null;
-		
-		return new FoodItem(fixFromXML(foodName),
-				(properties.equals("Vegan"))?true:false,
-						(properties.equals("Vegetarian")||properties.equals("Vegan"))?true:false);
-	}
-	/*
-	 * Adapted from :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress-a-file-in-the-gip-format.html
-	 */
-	public static File uncompressFile(File inFile){
-		String result;
-		if(!inFile.toString().endsWith(".gz")){
-			if(inFile.toString().indexOf('.')!=-1){
-				result = inFile.toString();
-				result = result.substring(0,result.indexOf('.'))+".unzip"+result.substring(result.indexOf('.'),result.indexOf(".unz")+1);
-			} else{
-				result = inFile.toString()+".unzip";
-			}
-		} else{
-			result = inFile.toString().substring(0,inFile.toString().length()-3);
-		}
-		return uncompressFile(inFile,new File(result));
-		
-	}
-	/*
-	 * Adapted from :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress-a-file-in-the-gip-format.html
-	 */
-	public static boolean uncompressFile(FileInputStream input, FileOutputStream out){
-		  try {
-		        // Open the compressed file
-		        GZIPInputStream in = new GZIPInputStream(input);
-		       
 
-		        // Transfer bytes from the compressed file to the output file
-		        byte[] buf = new byte[1024];
-		        int len;
-		        while ((len = in.read(buf)) > 0) {
-		            out.write(buf, 0, len);
-		        }
-		    
-		        // Close the file and stream
-		        in.close();
-		        out.close();
-		        return true;
-		    } catch (IOException e) {
-		    	return false;
-		    }
+		foodName = foodName.substring(foodName.indexOf('>') + 1, foodName
+				.lastIndexOf("</"));
+		properties = properties.substring(properties.indexOf('>') + 1,
+				properties.lastIndexOf("</"));
+		if (!sc.hasNext() || !sc.nextLine().equals("</FoodItem>"))
+			return null;
+
+		return new FoodItem(
+				fixFromXML(foodName),
+				(properties.equals("Vegan")) ? true : false,
+				(properties.equals("Vegetarian") || properties.equals("Vegan")) ? true
+						: false);
 	}
-	
+
 	/*
-	 * Adapted from :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress-a-file-in-the-gip-format.html
+	 * Adapted from
+	 * :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress
+	 * -a-file-in-the-gip-format.html
 	 */
-	public static File uncompressFile(File inFile, File outFile){
+	public static File uncompressFile(File inFile) {
+		String result;
+		if (!inFile.toString().endsWith(".gz")) {
+			if (inFile.toString().indexOf('.') != -1) {
+				result = inFile.toString();
+				result = result.substring(0, result.indexOf('.'))
+						+ ".unzip"
+						+ result.substring(result.indexOf('.'), result
+								.indexOf(".unz") + 1);
+			} else {
+				result = inFile.toString() + ".unzip";
+			}
+		} else {
+			result = inFile.toString().substring(0,
+					inFile.toString().length() - 3);
+		}
+		return uncompressFile(inFile, new File(result));
+
+	}
+
+	/*
+	 * Adapted from
+	 * :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress
+	 * -a-file-in-the-gip-format.html
+	 */
+	public static boolean uncompressFile(FileInputStream input,
+			FileOutputStream out) {
 		try {
-			return(uncompressFile(new FileInputStream(inFile),new FileOutputStream(outFile)))?outFile:null;
+			// Open the compressed file
+			GZIPInputStream in = new GZIPInputStream(input);
+
+			// Transfer bytes from the compressed file to the output file
+			byte[] buf = new byte[1024];
+			int len;
+			while ((len = in.read(buf)) > 0) {
+				out.write(buf, 0, len);
+			}
+
+			// Close the file and stream
+			in.close();
+			out.close();
+			return true;
+		} catch (IOException e) {
+			return false;
+		}
+	}
+
+	/*
+	 * Adapted from
+	 * :http://www.java-tips.org/java-se-tips/java.util.zip/how-to-uncompress
+	 * -a-file-in-the-gip-format.html
+	 */
+	public static File uncompressFile(File inFile, File outFile) {
+		try {
+			return (uncompressFile(new FileInputStream(inFile),
+					new FileOutputStream(outFile))) ? outFile : null;
 		} catch (FileNotFoundException e1) {
 			// TODO Auto-generated catch block
 			return null;
 		}
+	}
+
+	@SuppressWarnings("unchecked")
+	public static ArrayList<MealMenu> readSerialized(FileInputStream is) {
+		ObjectInputStream objectIn;
+		try {
+			objectIn = new ObjectInputStream(is);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+			return null;
+		}
+		try {
+			ArrayList<MealMenu> result = (ArrayList<MealMenu>) objectIn.readObject();
+			objectIn.close();
+			return result;
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		return null;
+
+	}
+	
+	public static ArrayList<MealMenu> readXML(FileInputStream is) {
+		ObjectInputStream objectIn;
+		try {
+			objectIn = new ObjectInputStream(is);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+			return null;
+		}
+		try {
+			ArrayList<MealMenu> result = (ArrayList<MealMenu>) objectIn.readObject();
+			objectIn.close();
+			return result;
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		return null;
+
 	}
 }
