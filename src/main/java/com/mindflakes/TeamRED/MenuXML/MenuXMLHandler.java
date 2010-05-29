@@ -36,10 +36,10 @@ public class MenuXMLHandler extends DefaultHandler{
 	static final String VENUES = "Venues";
 	static final String VENUE = "Venue";
 	static final String VENUENAME = "VenueName";
-	static final String FOODITEMS = "FOODITEMS";
-	static final String FOODITEM = "FOODITEM";
-	static final String FOODNAME = "FOOD";
-	static final String FOODPROPERTIES = "FOODITEM";
+	static final String FOODITEMS = "FoodItems";
+	static final String FOODITEM = "FoodItem";
+	static final String FOODNAME = "FoodName";
+	static final String FOODPROPERTIES = "FoodProperties";
 
 	
 	public ArrayList<MealMenu> getMenus(){
