@@ -75,9 +75,9 @@ public class MealMenu implements Serializable{
 	
 	
 	/**
-	 * Generates a blank MealMenu class for package use.
+	 * Generates a blank slate of a MealMenu class with no name, venues, mealnames, or times.
 	 */
-	MealMenu(){
+	public MealMenu(){
 		this.commonsName = null;
 		this.venues = new ArrayList<Venue>();
 		this.mealName = null;
