@@ -4,11 +4,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.zip.GZIPOutputStream;
 
-import com.mindflakes.TeamRED.menuClasses.*;
+import com.mindflakes.TeamRED.menuClasses.FoodItem;
+import com.mindflakes.TeamRED.menuClasses.MealMenu;
+import com.mindflakes.TeamRED.menuClasses.Venue;
 
 /**
  * This class is used to write a set of MealMenu objects to a tagged XML format which is easier for applications to read.
@@ -99,5 +102,18 @@ public class Writer {
 	    	return null;
 	    }
 	}	
+	
+	public static boolean writeSerialized(ArrayList<MealMenu> menus, FileOutputStream ofs){
+		try {
+			ObjectOutputStream objectOut = new ObjectOutputStream(ofs);
+			objectOut.writeObject(menus);
+			objectOut.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+		return false;
+	}
 
 }

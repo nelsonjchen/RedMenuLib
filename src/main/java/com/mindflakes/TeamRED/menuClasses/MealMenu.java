@@ -10,8 +10,11 @@ import java.util.ArrayList;
  * @author Johan Henkens
  *
  */
-@SuppressWarnings("serial")
 public class MealMenu implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8885680207194393964L;
 	private String commonsName;
 	private long startMillis, endMillis, modMillis;
 	private ArrayList<Venue> venues;
