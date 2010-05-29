@@ -39,6 +39,7 @@ public class MealMenu implements Serializable{
 		removeEmptyVenues();
 	}
 	
+	
 	public boolean equals(Object obj){
 		MealMenu in;
 		try{
@@ -72,15 +73,17 @@ public class MealMenu implements Serializable{
 		}
 	}
 	
-	@SuppressWarnings("unused")
-	private MealMenu(){
+	
+	/**
+	 * Generates a blank MealMenu class for package use.
+	 */
+	MealMenu(){
 		this.commonsName = null;
 		this.venues = new ArrayList<Venue>();
 		this.mealName = null;
 		this.modMillis = 0;
 		this.startMillis = 0;
 		this.endMillis = 0;
-		
 	}
 	
 
