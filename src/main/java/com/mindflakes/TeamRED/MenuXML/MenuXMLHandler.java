@@ -25,7 +25,22 @@ public class MenuXMLHandler extends DefaultHandler{
 	private Venue venue;
 	private FoodItem fooditem;
 	
+	static final String MEALMENUS = "MealMenus";
 	static final String MEALMENU = "MealMenu";
+	static final String COMMONSNAME = "CommonsName";
+	static final String MEALNAME = "MealName";
+	static final String STARTMILLIS = "StartMillis";
+	static final String ENDMILLIS = "EndMillis";
+	static final String MODMILLIS = "ModMillis";
+	
+	static final String VENUES = "Venues";
+	static final String VENUE = "Venue";
+	static final String VENUENAME = "VenueName";
+	static final String FOODITEMS = "FOODITEMS";
+	static final String FOODITEM = "FOODITEM";
+	static final String FOODNAME = "FOOD";
+	static final String FOODPROPERTIES = "FOODITEM";
+
 	
 	public ArrayList<MealMenu> getMenus(){
 		return this.menus;
@@ -59,10 +74,11 @@ public class MenuXMLHandler extends DefaultHandler{
             Attributes attributes) throws SAXException {
         super.startElement(uri, localName, name, attributes);
         if (localName.equalsIgnoreCase(MEALMENU)){
+        	menu = new MealMenu();
         }
     }
 }
 
-	
+
 
 
