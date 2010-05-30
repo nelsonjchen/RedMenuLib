@@ -19,11 +19,25 @@ import com.mindflakes.TeamRED.menuClasses.Venue;
  * 
  */
 public class MenuXMLHandler extends DefaultHandler{
-	private ArrayList<MealMenu> menus;
 	private StringBuilder builder;
+	private ArrayList<MealMenu> menus;
 	private MealMenu menu;
+	private ArrayList<Venue> venues;
 	private Venue venue;
+	private ArrayList<FoodItem> fooditems;
 	private FoodItem fooditem;
+	
+	private String commonsname;
+	private String mealname;
+	private String startmillis;
+	private String modmillis; 
+	private String endmillis;
+	
+	private String venuename;
+	
+	private String foodname;
+	private String foodProperties;
+	
 	
 	static final String MEALMENUS = "MealMenus";
 	static final String MEALMENU = "MealMenu";
@@ -52,12 +66,17 @@ public class MenuXMLHandler extends DefaultHandler{
         super.characters(ch, start, length);
         builder.append(ch, start, length);
     }
-
+	
     @Override
     public void endElement(String uri, String localName, String name)
             throws SAXException {
         super.endElement(uri, localName, name);
-        if (this.menu != null){
+        if (this.venues != null){ 
+        	if (localName.equalsIgnoreCase(VENUES)){
+        		venues.add(new Venue(builder.toString(), fooditems));
+        	} else if (localName.equalsIgnoreCase(FOODITEMS)){
+        		
+        	}
             
             builder.setLength(0);    
         }
@@ -67,14 +86,20 @@ public class MenuXMLHandler extends DefaultHandler{
     public void startDocument() throws SAXException {
         super.startDocument();
         builder = new StringBuilder();
+        menus = new ArrayList<MealMenu>();
+        venues = new ArrayList<Venue>();
+        fooditems = new ArrayList<FoodItem>();
     }
 
     @Override
     public void startElement(String uri, String localName, String name,
             Attributes attributes) throws SAXException {
         super.startElement(uri, localName, name, attributes);
-        if (localName.equalsIgnoreCase(MEALMENU)){
-        	menu = new MealMenu();
+        if (localName.equalsIgnoreCase(VENUES)){
+        	venues = new ArrayList<Venue>();
+        }
+        if (localName.equalsIgnoreCase(FOODITEMS)){
+        	fooditems = new ArrayList<FoodItem>();
         }
     }
 }
