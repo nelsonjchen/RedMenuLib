@@ -29,14 +29,14 @@ public class MenuXMLHandler extends DefaultHandler{
 	
 	private String commonsname;
 	private String mealname;
-	private String startmillis;
-	private String modmillis; 
-	private String endmillis;
+	private long startmillis;
+	private long modmillis; 
+	private long endmillis;
 	
 	private String venuename;
 	
 	private String foodname;
-	private String foodProperties;
+	private String foodproperties;
 	
 	
 	static final String MEALMENUS = "MealMenus";
@@ -69,17 +69,42 @@ public class MenuXMLHandler extends DefaultHandler{
 	
     @Override
     public void endElement(String uri, String localName, String name)
-            throws SAXException {
-        super.endElement(uri, localName, name);
-        if (this.venues != null){ 
-        	if (localName.equalsIgnoreCase(VENUES)){
-        		venues.add(new Venue(builder.toString(), fooditems));
-        	} else if (localName.equalsIgnoreCase(FOODITEMS)){
-        		
-        	}
-            
-            builder.setLength(0);    
-        }
+    throws SAXException {
+    	super.endElement(uri, localName, name);
+    	
+    	if (localName.equalsIgnoreCase(COMMONSNAME)) {
+    		commonsname = builder.toString();
+    	} else if (localName.equalsIgnoreCase(MEALNAME)) {
+    		mealname = builder.toString();
+    	} else if (localName.equalsIgnoreCase(STARTMILLIS)) {
+    		startmillis = Long.parseLong(builder.toString());
+    	} else if (localName.equalsIgnoreCase(ENDMILLIS)) {
+    		endmillis = Long.parseLong(builder.toString());
+    	} else if (localName.equalsIgnoreCase(MODMILLIS)) {
+    		modmillis = Long.parseLong(builder.toString());
+    	} else if (localName.equalsIgnoreCase(VENUENAME)) {
+    		venuename = builder.toString();
+    	} else if (localName.equalsIgnoreCase(FOODNAME)) {
+    		foodname = builder.toString();
+    	} else if (localName.equalsIgnoreCase(FOODPROPERTIES)) {
+    		foodproperties = builder.toString();
+    	} else if (localName.equalsIgnoreCase(FOODITEM)) {
+    		boolean vegan = false;
+    		boolean vegetarian = false;
+    		if (foodproperties.equalsIgnoreCase("Vegan")) {
+    			vegan = true;
+    		} else if (foodproperties.equalsIgnoreCase("Vegetarian")) {
+    			vegetarian = true;
+    		}
+    		fooditems.add(new FoodItem(foodname, vegan, vegetarian));
+    	} else if (localName.equalsIgnoreCase(FOODITEMS)) {
+    		venues.add(new Venue(venuename, fooditems));
+    	} else if (localName.equalsIgnoreCase(VENUES)) {
+    		menus.add(new MealMenu(commonsname, startmillis, endmillis, modmillis, venues, mealname));
+    	}
+
+    	builder.setLength(0);    
+
     }
 
     @Override
