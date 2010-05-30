@@ -43,6 +43,9 @@ public class Reader {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
 		ArrayList<MealMenu> result;
 		try {
+			
+			// Must return scanner back to InputStream
+			// Ass backwards but we have to maintain the API.
 			SAXParser parser = factory.newSAXParser();
 			MenuXMLHandler handler = new MenuXMLHandler();
 			StringBuilder s = new StringBuilder();
@@ -54,7 +57,6 @@ public class Reader {
 			result = handler.getMenus();
 		} catch(Exception e){
 			result = null;
-			e.printStackTrace();
 			throw new RuntimeException();
 		} finally {
 			sc.close();
