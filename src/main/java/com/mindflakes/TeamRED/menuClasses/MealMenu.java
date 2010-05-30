@@ -80,6 +80,7 @@ public class MealMenu implements Serializable{
 	/**
 	 * Generates a blank slate of a MealMenu class with no name, venues, mealnames, or times.
 	 */
+	@SuppressWarnings("unused")
 	private MealMenu(){
 		this.commonsName = null;
 		this.venues = new ArrayList<Venue>();

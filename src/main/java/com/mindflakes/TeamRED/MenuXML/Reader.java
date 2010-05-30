@@ -15,9 +15,7 @@ import java.util.zip.GZIPInputStream;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-import com.mindflakes.TeamRED.menuClasses.FoodItem;
 import com.mindflakes.TeamRED.menuClasses.MealMenu;
-import com.mindflakes.TeamRED.menuClasses.Venue;
 
 /**
  * This class contains a reader that parses an XML file that is properly

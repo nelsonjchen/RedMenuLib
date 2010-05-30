@@ -21,11 +21,8 @@ import com.mindflakes.TeamRED.menuClasses.Venue;
 public class MenuXMLHandler extends DefaultHandler{
 	private StringBuilder builder;
 	private ArrayList<MealMenu> menus;
-	private MealMenu menu;
 	private ArrayList<Venue> venues;
-	private Venue venue;
 	private ArrayList<FoodItem> fooditems;
-	private FoodItem fooditem;
 	
 	private String commonsname;
 	private String mealname;
