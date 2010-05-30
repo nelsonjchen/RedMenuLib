@@ -72,37 +72,38 @@ public class MenuXMLHandler extends DefaultHandler{
     throws SAXException {
     	super.endElement(uri, localName, name);
     	
-    	if (localName.equalsIgnoreCase(COMMONSNAME)) {
+    	if (name.equalsIgnoreCase(COMMONSNAME)) {
     		commonsname = builder.toString();
-    	} else if (localName.equalsIgnoreCase(MEALNAME)) {
+    	} else if (name.equalsIgnoreCase(MEALNAME)) {
     		mealname = builder.toString();
-    	} else if (localName.equalsIgnoreCase(STARTMILLIS)) {
+    	} else if (name.equalsIgnoreCase(STARTMILLIS)) {
     		startmillis = Long.parseLong(builder.toString());
-    	} else if (localName.equalsIgnoreCase(ENDMILLIS)) {
+    	} else if (name.equalsIgnoreCase(ENDMILLIS)) {
     		endmillis = Long.parseLong(builder.toString());
-    	} else if (localName.equalsIgnoreCase(MODMILLIS)) {
+    	} else if (name.equalsIgnoreCase(MODMILLIS)) {
     		modmillis = Long.parseLong(builder.toString());
-    	} else if (localName.equalsIgnoreCase(VENUENAME)) {
+    	} else if (name.equalsIgnoreCase(VENUENAME)) {
     		venuename = builder.toString();
-    	} else if (localName.equalsIgnoreCase(FOODNAME)) {
+    	} else if (name.equalsIgnoreCase(FOODNAME)) {
     		foodname = builder.toString();
-    	} else if (localName.equalsIgnoreCase(FOODPROPERTIES)) {
+    	} else if (name.equalsIgnoreCase(FOODPROPERTIES)) {
     		foodproperties = builder.toString();
-    	} else if (localName.equalsIgnoreCase(FOODITEM)) {
+    	} else if (name.equalsIgnoreCase(FOODITEM)) {
     		boolean vegan = false;
     		boolean vegetarian = false;
     		if (foodproperties.equalsIgnoreCase("Vegan")) {
     			vegan = true;
+    			vegetarian = true;
     		} else if (foodproperties.equalsIgnoreCase("Vegetarian")) {
     			vegetarian = true;
     		}
     		fooditems.add(new FoodItem(foodname, vegan, vegetarian));
-    	} else if (localName.equalsIgnoreCase(FOODITEMS)) {
+    	} else if (name.equalsIgnoreCase(FOODITEMS)) {
     		venues.add(new Venue(venuename, fooditems));
-    	} else if (localName.equalsIgnoreCase(VENUES)) {
+    	} else if (name.equalsIgnoreCase(MEALMENU)) {
     		menus.add(new MealMenu(commonsname, startmillis, endmillis, modmillis, venues, mealname));
     	}
-
+    	
     	builder.setLength(0);    
 
     }
@@ -120,10 +121,10 @@ public class MenuXMLHandler extends DefaultHandler{
     public void startElement(String uri, String localName, String name,
             Attributes attributes) throws SAXException {
         super.startElement(uri, localName, name, attributes);
-        if (localName.equalsIgnoreCase(VENUES)){
+        if (name.equalsIgnoreCase(VENUES)){
         	venues = new ArrayList<Venue>();
         }
-        if (localName.equalsIgnoreCase(FOODITEMS)){
+        if (name.equalsIgnoreCase(FOODITEMS)){
         	fooditems = new ArrayList<FoodItem>();
         }
     }
