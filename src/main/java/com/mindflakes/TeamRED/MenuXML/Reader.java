@@ -51,6 +51,7 @@ public class Reader {
 			result = handler.getMenus();
 		} catch(Exception e){
 			result = null;
+			
 			throw new RuntimeException();
 		} finally {
 			sc.close();

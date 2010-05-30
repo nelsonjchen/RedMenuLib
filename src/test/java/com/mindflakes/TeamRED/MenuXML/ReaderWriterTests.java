@@ -28,7 +28,6 @@ public class ReaderWriterTests {
     	try {
 			fromWeb = Reader.readFile(new Scanner(new File("target/test-classes/testInput.xml")));
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     }
