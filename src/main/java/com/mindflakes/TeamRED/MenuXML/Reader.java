@@ -1,10 +1,12 @@
 package com.mindflakes.TeamRED.MenuXML;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -44,14 +46,15 @@ public class Reader {
 			SAXParser parser = factory.newSAXParser();
 			MenuXMLHandler handler = new MenuXMLHandler();
 			StringBuilder s = new StringBuilder();
-			while(sc.hasNext()) {
-				s.append(sc.next());
+			while(sc.hasNextLine()) {
+				s.append(sc.nextLine());
 			}
-			parser.parse(s.toString(), handler);
+			InputStream is = new ByteArrayInputStream(s.toString().getBytes("UTF-8"));
+			parser.parse(is, handler);
 			result = handler.getMenus();
 		} catch(Exception e){
 			result = null;
-			
+			e.printStackTrace();
 			throw new RuntimeException();
 		} finally {
 			sc.close();
