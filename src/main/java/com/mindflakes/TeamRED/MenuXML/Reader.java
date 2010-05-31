@@ -65,6 +65,28 @@ public class Reader {
 		else
 			return result;
 	}
+	
+	public static ArrayList<MealMenu> readFile(File f) {
+		SAXParserFactory factory = SAXParserFactory.newInstance();
+		ArrayList<MealMenu> result;
+		try {
+			
+			// Must return scanner back to InputStream
+			// Ass backwards but we have to maintain the API.
+			SAXParser parser = factory.newSAXParser();
+			MenuXMLHandler handler = new MenuXMLHandler();
+			parser.parse(f, handler);
+			result = handler.getMenus();
+		} catch(Exception e){
+			result = null;
+			throw new RuntimeException();
+		}
+		
+		if (result == null)
+			return new ArrayList<MealMenu>();
+		else
+			return result;
+	}
 
 	/*
 	 * Adapted from
