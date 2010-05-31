@@ -66,16 +66,45 @@ public class Reader {
 			return result;
 	}
 	
+	/**
+	 * Reads file and returns ArrayList of MealMenus
+	 * @param f
+	 * @return
+	 */
 	public static ArrayList<MealMenu> readFile(File f) {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
 		ArrayList<MealMenu> result;
 		try {
 			
-			// Must return scanner back to InputStream
-			// Ass backwards but we have to maintain the API.
 			SAXParser parser = factory.newSAXParser();
 			MenuXMLHandler handler = new MenuXMLHandler();
 			parser.parse(f, handler);
+			result = handler.getMenus();
+		} catch(Exception e){
+			result = null;
+			throw new RuntimeException();
+		}
+		
+		if (result == null)
+			return new ArrayList<MealMenu>();
+		else
+			return result;
+	}
+	
+	/**
+	 * Reads inputstream and returns arraylist of MealMenus
+	 * @param is
+	 * @return
+	 */
+	public static ArrayList<MealMenu> readIS(InputStream is) {
+		SAXParserFactory factory = SAXParserFactory.newInstance();
+		ArrayList<MealMenu> result;
+		try {
+			
+			
+			SAXParser parser = factory.newSAXParser();
+			MenuXMLHandler handler = new MenuXMLHandler();
+			parser.parse(is, handler);
 			result = handler.getMenus();
 		} catch(Exception e){
 			result = null;
