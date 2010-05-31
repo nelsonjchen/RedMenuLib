@@ -74,11 +74,11 @@ public class MenuXMLHandler extends DefaultHandler{
     	} else if (name.equalsIgnoreCase(MEALNAME)) {
     		mealname = builder.toString();
     	} else if (name.equalsIgnoreCase(STARTMILLIS)) {
-    		startmillis = Long.parseLong(builder.toString());
+    		startmillis = Long.parseLong(builder.toString().trim());
     	} else if (name.equalsIgnoreCase(ENDMILLIS)) {
-    		endmillis = Long.parseLong(builder.toString());
+    		endmillis = Long.parseLong(builder.toString().trim());
     	} else if (name.equalsIgnoreCase(MODMILLIS)) {
-    		modmillis = Long.parseLong(builder.toString());
+    		modmillis = Long.parseLong(builder.toString().trim());
     	} else if (name.equalsIgnoreCase(VENUENAME)) {
     		venuename = builder.toString();
     	} else if (name.equalsIgnoreCase(FOODNAME)) {
